@@ -1,8 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require("prism-react-renderer");
 
 const { env } = require("node:process");
 const isBlog = env.GLUESQL_DOC_TYPE === "blog";
@@ -10,6 +9,11 @@ const docsBaseUrl = env.GLUESQL_DOCS_BASE_URL ?? "/docs/dev/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
+
   title: "GlueSQL",
   tagline: "GlueSQL is quite sticky. It attaches to anywhere",
   favicon: "img/favicon.ico",
@@ -30,12 +34,11 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
   presets: [
     [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+
+      {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -57,9 +60,10 @@ const config = {
               docs: {
                 sidebarPath: require.resolve("./sidebars.js"),
                 routeBasePath: "/",
+                remarkPlugins: [require("remark-mdx")],
               },
             }),
-      }),
+      },
     ],
   ],
 
@@ -70,6 +74,10 @@ const config = {
     },
     navbar: {
       title: "Sandworm",
+      logo: {
+        alt: "Your Logo Alt Text",
+        src: "img/logo.svg",
+      },
       items: [
         ...(isBlog
           ? [
@@ -123,8 +131,8 @@ const config = {
       ],
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      theme: themes.github,
+      darkTheme: themes.dracula,
       additionalLanguages: ["rust", "toml"],
     },
   },

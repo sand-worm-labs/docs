@@ -27,6 +27,7 @@ use {
     gluesql_core::{ast_builder::{function as f, *}}
 };
 
+
 values(vec![
     vec![f::ascii("'\t'"), f::chr(9)],
     vec![f::ascii("'\n'"), f::chr(10)],
