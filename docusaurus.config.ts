@@ -51,7 +51,7 @@ const config: Config = {
             }
           : {
               docs: {
-                sidebarPath: path.resolve(__dirname, './sidebars.js'),
+                sidebarPath: path.resolve(__dirname, './sidebars.ts'),
                 routeBasePath: '/',
                 remarkPlugins: [require('remark-mdx')],
               },
