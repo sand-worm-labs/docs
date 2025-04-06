@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Creating Derived Subqueries
 
-This document covers the `alias_as` functionality of the AST Builder in the GlueSQL project. The `alias_as` method allows you to create a derived subquery, which is similar to subqueries in SQL. It gives you the ability to use the output of a query as a table to perform further queries.
+This document covers the `alias_as` functionality of the AST Builder in the WormSQL project. The `alias_as` method allows you to create a derived subquery, which is similar to subqueries in SQL. It gives you the ability to use the output of a query as a table to perform further queries.
 
 ## Basic Usage
 
@@ -15,7 +15,7 @@ let actual = table("Item")
     .select()
     .alias_as("Sub")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -33,7 +33,7 @@ let actual = table("Item")
     .filter("item_id = 300")
     .alias_as("Sub")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -45,7 +45,7 @@ let actual = table("Item")
     .project("item_id")
     .alias_as("Sub")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -61,7 +61,7 @@ let actual = table("Item")
     .select()
     .project("item_name")
     .project("category_name")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -77,7 +77,7 @@ let actual = table("Category")
     .having("category_name = 'Meat'")
     .alias_as("Sub2")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -89,7 +89,7 @@ let actual = table("Item")
     .order_by("price DESC")
     .alias_as("Sub")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -104,6 +104,6 @@ let actual = table("Item")
     .limit(1)
     .alias_as("Sub")
     .select()
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```

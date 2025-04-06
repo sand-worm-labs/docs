@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Querying Schemaless Data
 
-GlueSQL is an SQL database that provides a unique feature: it allows you to work with schemaless data, similar to NoSQL databases. Please note this point in the documentation.
+WormSQL is an SQL database that provides a unique feature: it allows you to work with schemaless data, similar to NoSQL databases. Please note this point in the documentation.
 
 ## Creating a Schemaless Table
 
@@ -19,7 +19,7 @@ This creates a schemaless table. You can now insert data freely into each row, l
 
 ## Example SQL Queries
 
-Here are some example SQL queries that demonstrate how to use GlueSQL with schemaless data:
+Here are some example SQL queries that demonstrate how to use WormSQL with schemaless data:
 
 ### Creating Tables
 

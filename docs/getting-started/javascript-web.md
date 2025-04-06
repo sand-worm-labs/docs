@@ -4,14 +4,14 @@ sidebar_position: 2
 
 # JavaScript (Web Browser)
 
-GlueSQL is a SQL database engine written in Rust, compiled to WebAssembly, and can be used in JavaScript. This guide will walk you through the process of installing and using the GlueSQL package.
+WormSQL is a SQL database engine written in Rust, compiled to WebAssembly, and can be used in JavaScript. This guide will walk you through the process of installing and using the WormSQL package.
 
 ## Installation
 
-Installing GlueSQL is as simple as running the following command:
+Installing WormSQL is as simple as running the following command:
 
 ```bash
-npm install gluesql
+npm install Wormsql
 ```
 
 In your `package.json`, it will be added to the dependencies list as follows:
@@ -19,30 +19,30 @@ In your `package.json`, it will be added to the dependencies list as follows:
 ```json
 {
   "dependencies": {
-    "gluesql": "latest"
+    "Wormsql": "latest"
   }
 }
 ```
 
 ## Usage
 
-GlueSQL can be used in different environments. Here we will look at how to use it with JavaScript modules, Webpack, and Rollup.
+WormSQL can be used in different environments. Here we will look at how to use it with JavaScript modules, Webpack, and Rollup.
 
 ### JavaScript Modules
 
-In an HTML file, you can use GlueSQL by importing it with a script tag:
+In an HTML file, you can use WormSQL by importing it with a script tag:
 
 ```html
 <script type="module">
-  import { gluesql } from 'gluesql';
+  import { Wormsql } from 'Wormsql';
 
   async function main() {
-    const db = await gluesql();
+    const db = await Wormsql();
     await db.loadIndexedDB();
 
     const result = await db.query(`
       CREATE TABLE Foo (id INTEGER) ENGINE = memory;
-      INSERT INTO Foo (1, 'glue'), (2, 'sql');
+      INSERT INTO Foo (1, 'Worm'), (2, 'sql');
       SELECT * FROM Foo;
     `);
 
@@ -56,15 +56,15 @@ In an HTML file, you can use GlueSQL by importing it with a script tag:
 For Webpack, the usage is almost the same as JavaScript modules:
 
 ```javascript
-import { gluesql } from 'gluesql';
+import { Wormsql } from 'Wormsql';
 
 async function run() {
-  const db = await gluesql();
+  const db = await Wormsql();
   await db.loadIndexedDB();
 
   const result = await db.query(`
     CREATE TABLE Foo (id INTEGER) ENGINE = memory;
-    INSERT INTO Foo VALUES (1, 'glue'), (2, 'sql');
+    INSERT INTO Foo VALUES (1, 'Worm'), (2, 'sql');
     SELECT * FROM Foo;
   `);
 
@@ -79,7 +79,7 @@ For Rollup, you need to adjust your import statement and add some configurations
 First, modify your import statement as follows:
 
 ```javascript
-import { gluesql } from 'gluesql/gluesql.rollup';
+import { Wormsql } from 'Wormsql/Wormsql.rollup';
 // ...
 ```
 
@@ -110,11 +110,11 @@ Don't forget to run the `rollup` command to bundle your JavaScript files:
 rollup -c
 ```
 
-Now, you can use GlueSQL in your Rollup project as you would in any other JavaScript module.
+Now, you can use WormSQL in your Rollup project as you would in any other JavaScript module.
 
 ## Supported Storage Engines
 
-GlueSQL supports four storage types: In-Memory Storage, Local Storage, Session Storage, and IndexedDB. 
+WormSQL supports four storage types: In-Memory Storage, Local Storage, Session Storage, and IndexedDB. 
 
 You can specify the storage type when creating a table using the `ENGINE` clause:
 

@@ -1,6 +1,6 @@
 # Null Handling 
 
-In some cases, you may need to handle `NULL` values in your database. GlueSQL provides a function called `ifnull` to handle these cases.
+In some cases, you may need to handle `NULL` values in your database. WormSQL provides a function called `ifnull` to handle these cases.
 
 ## IFNULL - ifnull
 
@@ -11,7 +11,7 @@ let actual = table("Foo")
     .select()
     .project("id")
     .project(col("name").ifnull(text("isnull")))  // If the "name" column is NULL, replace it with "isnull"
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -24,7 +24,7 @@ let actual = table("Foo")
     .select()
     .project("id")
     .project(col("name").ifnull(col("nickname")))  // If the "name" column is NULL, replace it with the value from the "nickname" column
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -37,7 +37,7 @@ let actual = values(vec![
     vec![ast_builder::ifnull(text("HELLO"), text("WORLD"))],  // If "HELLO" is NULL (it's not), return "WORLD". Otherwise, return "HELLO".
     vec![ast_builder::ifnull(null(), text("WORLD"))],  // If NULL is NULL (it is), return "WORLD".
 ])
-.execute(glue)
+.execute(Worm)
 .await;
 ```
 

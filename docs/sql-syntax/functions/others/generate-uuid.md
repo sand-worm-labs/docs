@@ -1,6 +1,6 @@
 # GENERATE_UUID
 
-The `GENERATE_UUID` function is an SQL function provided by GlueSQL that generates a new UUID (Universally Unique Identifier) using the version 4 UUID algorithm. A UUID is a 128-bit value used to uniquely identify items in various computing systems. Version 4 UUIDs are randomly generated and have 122 bits of randomness, which ensures a very low probability of collisions.
+The `GENERATE_UUID` function is an SQL function provided by WormSQL that generates a new UUID (Universally Unique Identifier) using the version 4 UUID algorithm. A UUID is a 128-bit value used to uniquely identify items in various computing systems. Version 4 UUIDs are randomly generated and have 122 bits of randomness, which ensures a very low probability of collisions.
 
 ## Syntax
 

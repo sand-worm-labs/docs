@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # TEXT
 
-The `TEXT` data type in SQL is used to store variable-length character strings. In GlueSQL, the TEXT data type is the only supported string data type, providing the ability to store and manage strings of varying lengths.
+The `TEXT` data type in SQL is used to store variable-length character strings. In WormSQL, the TEXT data type is the only supported string data type, providing the ability to store and manage strings of varying lengths.
 
 Here's an example of how to create a table, insert data, and query data using the `TEXT` data type:
 

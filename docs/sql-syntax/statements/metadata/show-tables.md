@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # SHOW TABLES
 
-The `SHOW TABLES` statement in GlueSQL is used to display a list of tables available in the database. This statement is useful when you want to inspect the current structure of your database or when you want to manage multiple tables.
+The `SHOW TABLES` statement in WormSQL is used to display a list of tables available in the database. This statement is useful when you want to inspect the current structure of your database or when you want to manage multiple tables.
 
 ## Syntax
 

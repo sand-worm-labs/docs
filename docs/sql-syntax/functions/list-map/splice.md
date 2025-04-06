@@ -1,6 +1,6 @@
 # SQL Function - "SPLICE"
 
-The "SPLICE" function in GlueSQL is used to modify elements in a list. It allows you to remove or replace elements in a list. The syntax for the "SPLICE" function is as follows:
+The "SPLICE" function in WormSQL is used to modify elements in a list. It allows you to remove or replace elements in a list. The syntax for the "SPLICE" function is as follows:
 
 ```sql
 SPLICE(list1, start_index, end_index [, list2])

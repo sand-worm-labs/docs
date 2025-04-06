@@ -1,6 +1,6 @@
 # Current Date and Time
 
-GlueSQL provides a function to get the current date and time: `now`.
+WormSQL provides a function to get the current date and time: `now`.
 
 ## Now - now
 
@@ -11,7 +11,7 @@ let actual = table("Record")
     .select()
     .filter(col("time_stamp").gt(now()))  // select rows where "time_stamp" is later than current time
     .project("id, time_stamp")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -27,7 +27,7 @@ let actual = table("Record")
         "2, NOW()",  // Inserts the current time
         "3, '9999-12-31T23:59:40.364832862'",
     ])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 In the example above, the "time_stamp" column for the row with id 2 is set to the current time at the moment of insertion.

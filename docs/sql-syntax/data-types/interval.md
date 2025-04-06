@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # INTERVAL
 
-The `INTERVAL` data type in GlueSQL is used to represent a period of time. In accordance with the ANSI SQL standard, several subtypes of `INTERVAL` can be used to represent different units of time, such as years, months, days, hours, minutes, and seconds. These subtypes are:
+The `INTERVAL` data type in WormSQL is used to represent a period of time. In accordance with the ANSI SQL standard, several subtypes of `INTERVAL` can be used to represent different units of time, such as years, months, days, hours, minutes, and seconds. These subtypes are:
 
 - YEAR
 - YEAR TO MONTH
@@ -67,8 +67,8 @@ Here are some examples of how to use different `INTERVAL` subtypes:
 
 ## Unsupported Conversions
 
-In GlueSQL, you cannot convert between different `INTERVAL` subtypes, such as converting 1 MONTH to DAYS or converting YEAR TO MONTH to DAY TO SECOND. These conversions are not supported.
+In WormSQL, you cannot convert between different `INTERVAL` subtypes, such as converting 1 MONTH to DAYS or converting YEAR TO MONTH to DAY TO SECOND. These conversions are not supported.
 
 ## Conclusion
 
-The `INTERVAL` data type is a powerful way to represent time periods in GlueSQL. By following the ANSI SQL standard, you can use a combination of subtypes to represent complex periods of time. Use the `INTERVAL` keyword when creating tables and inserting values to make the most of this data type.
+The `INTERVAL` data type is a powerful way to represent time periods in WormSQL. By following the ANSI SQL standard, you can use a combination of subtypes to represent complex periods of time. Use the `INTERVAL` keyword when creating tables and inserting values to make the most of this data type.

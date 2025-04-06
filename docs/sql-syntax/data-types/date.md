@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # DATE
 
-In GlueSQL, the `DATE` data type is used to store date values in the format 'YYYY-MM-DD'. Note that GlueSQL currently does not support timezones.
+In WormSQL, the `DATE` data type is used to store date values in the format 'YYYY-MM-DD'. Note that WormSQL currently does not support timezones.
 
 ## Creating a table with DATE columns
 
@@ -68,7 +68,7 @@ FROM DateLog;
 
 ## Handling invalid date values
 
-If you try to insert an invalid date value into a `DATE` column, GlueSQL will return an error:
+If you try to insert an invalid date value into a `DATE` column, WormSQL will return an error:
 
 ```sql
 INSERT INTO DateLog VALUES (1, '12345-678', '2021-05-01');
@@ -82,4 +82,4 @@ failed to parse date 12345-678
 
 ## Conclusion
 
-In summary, the `DATE` data type in GlueSQL allows you to store and manipulate date values in your database. You can create tables with `DATE` columns, insert and query data, filter data based on date comparisons, and perform date arithmetic using various operators and intervals. Always remember to use valid date formats when inserting data into `DATE` columns to avoid errors.
+In summary, the `DATE` data type in WormSQL allows you to store and manipulate date values in your database. You can create tables with `DATE` columns, insert and query data, filter data based on date comparisons, and perform date arithmetic using various operators and intervals. Always remember to use valid date formats when inserting data into `DATE` columns to avoid errors.

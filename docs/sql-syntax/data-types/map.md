@@ -4,7 +4,7 @@ sidebar_position: 11
 
 # MAP
 
-The `MAP` data type in GlueSQL is used to store nested key-value pairs, similar to JSON objects. The object keys must be strings, and the values can be any valid data supported by GlueSQL, such as numbers, strings, booleans, `null`, or even other nested `MAP` values. Although the input is provided in a JSON object format for convenience, it can store more than just JSON data.
+The `MAP` data type in WormSQL is used to store nested key-value pairs, similar to JSON objects. The object keys must be strings, and the values can be any valid data supported by WormSQL, such as numbers, strings, booleans, `null`, or even other nested `MAP` values. Although the input is provided in a JSON object format for convenience, it can store more than just JSON data.
 
 Here is an example of creating a table with a `MAP` data type:
 

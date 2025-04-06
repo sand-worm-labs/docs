@@ -1,6 +1,6 @@
 # Character Conversion
 
-The AST Builder API in GlueSQL allows you to execute `ascii` and `chr` functions for character conversion.
+The AST Builder API in WormSQL allows you to execute `ascii` and `chr` functions for character conversion.
 
 ## ascii
 
@@ -24,7 +24,7 @@ In these examples, the ASCII and CHR functions should return matching values.
 
 ```rust
 use {
-    gluesql_core::{ast_builder::{function as f, *}}
+    Wormsql_core::{ast_builder::{function as f, *}}
 };
 
 
@@ -46,7 +46,7 @@ values(vec![
 .select()
 .project("column1 AS ascii")
 .project("column2 AS char")
-.execute(glue)
+.execute(Worm)
 .await;
 ```
 

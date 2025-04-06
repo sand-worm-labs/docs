@@ -1,6 +1,6 @@
 # Trimming
 
-GlueSQL provides several text trimming functions that allow you to remove leading or trailing characters from a text string.
+WormSQL provides several text trimming functions that allow you to remove leading or trailing characters from a text string.
 
 For this tutorial, we assume there's a table named `Food` with an `id` column of `INTEGER` type and a `name` column of `TEXT` type.
 
@@ -16,7 +16,7 @@ let actual = table("Food")
     .insert()
     .columns("id, name")
     .values(vec![vec![num(1), test_text]])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -32,7 +32,7 @@ let actual = table("Food")
     .insert()
     .columns("id, name")
     .values(vec![vec![num(2), test_text]])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -48,7 +48,7 @@ let actual = table("Food")
     .insert()
     .columns("id, name")
     .values(vec![vec![num(3), test_text]])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -60,6 +60,6 @@ let actual = table("Food")
     .insert()
     .columns("id, name")
     .values(vec![vec![num(4), test_text]])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```

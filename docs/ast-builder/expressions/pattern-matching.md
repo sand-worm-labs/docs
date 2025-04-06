@@ -1,6 +1,6 @@
 # Pattern Matching
 
-Pattern matching is a crucial feature in SQL that allows you to match rows based on specific patterns in a column. GlueSQL provides 4 pattern matching operators: `like`, `ilike`, `not_like`, and `not_ilike`. 
+Pattern matching is a crucial feature in SQL that allows you to match rows based on specific patterns in a column. WormSQL provides 4 pattern matching operators: `like`, `ilike`, `not_like`, and `not_ilike`. 
 
 Here's how you can use these operators with two special characters:
 
@@ -21,7 +21,7 @@ let actual = table("Category")
             .like(text("D%"))
             .or(col("name").like(text("M___"))),
     )
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -41,7 +41,7 @@ let actual = table("Category")
             .ilike(text("D%"))
             .or(col("name").ilike(text("M___"))),
     )
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -61,7 +61,7 @@ let actual = table("Category")
             .not_like(text("D%"))
             .and(col("name").not_like(text("M___"))),
     )
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -81,7 +81,7 @@ let actual = table("Category")
             .not_ilike(text("D%"))
             .and(col("name").not_ilike(text("M___"))),
     )
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
