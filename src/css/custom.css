@@ -19,7 +19,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-weight-bold: 700;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
-  --ifm-line-height-base: 1.65;
+  --ifm-line-height-base: 1.75;
   --ifm-global-spacing: 1rem;
 
   --ifm-heading-font-weight: 600;
@@ -30,6 +30,7 @@ html[data-theme="dark"] {
   --ifm-navbar-background-color: #161618;
   --ifm-background-color: #1b1b1f;
   --ifm-menu-color: #98989f;
+  --ifm-color-content: #d1d5db;
 }
 
 body,
