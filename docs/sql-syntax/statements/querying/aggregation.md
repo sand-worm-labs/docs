@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Aggregation
 
-GlueSQL supports several aggregate functions to perform calculations on a set of values. Below is a list of supported aggregate functions along with a brief explanation of each:
+WormSQL supports several aggregate functions to perform calculations on a set of values. Below is a list of supported aggregate functions along with a brief explanation of each:
 
 - `COUNT`: Counts the number of non-NULL values in the specified column.
 - `AVG`: Calculates the average of non-NULL values in the specified column.

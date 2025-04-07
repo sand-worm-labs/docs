@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # JOIN
 
-GlueSQL supports two types of JOIN operations:
+WormSQL supports two types of JOIN operations:
 - (INNER) JOIN
 - LEFT (OUTER) JOIN
 

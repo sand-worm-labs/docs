@@ -11,7 +11,7 @@ The AST Builder provides a powerful and flexible way to query data from your tab
 To perform a basic SELECT query using the AST Builder, simply call the `select()` method on a table object.
 
 ```rust
-let actual = table("Category").select().execute(glue).await;
+let actual = table("Category").select().execute(Worm).await;
 ```
 
 ## Filtering (WHERE)
@@ -22,7 +22,7 @@ To filter the results of a SELECT query, use the `filter()` method, providing a 
 let actual = table("Category")
     .select()
     .filter("name = 'Meat'")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -39,7 +39,7 @@ let actual = table("Item")
     .filter("c.name = 'Fruit' OR c.name = 'Meat'")
     .project("i.name AS item")
     .project("c.name AS category")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -57,7 +57,7 @@ let actual = table("Category")
         "Item.name AS item",
         "price",
     ])
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -74,7 +74,7 @@ let actual = table("Item")
     .having("SUM(Item.price) > 80")
     .project("Category.name AS category")
     .project("SUM(Item.price) AS sum_price")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -87,7 +87,7 @@ let actual = table("Item")
     .select()
     .project("name, price")
     .order_by("price DESC")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -102,6 +102,6 @@ let actual = table("Item")
     .order_by("price DESC")
     .offset(1)
     .limit(2)
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```

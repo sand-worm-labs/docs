@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # TIMESTAMP
 
-In GlueSQL, the `TIMESTAMP` data type is used to store date and time values in the format 'YYYY-MM-DD HH:MM:SS.SSSS'. Although timezone information can be included in the input string, GlueSQL stores all `TIMESTAMP` values in UTC, discarding the timezone information.
+In WormSQL, the `TIMESTAMP` data type is used to store date and time values in the format 'YYYY-MM-DD HH:MM:SS.SSSS'. Although timezone information can be included in the input string, WormSQL stores all `TIMESTAMP` values in UTC, discarding the timezone information.
 
 ## Creating a table with TIMESTAMP columns
 
@@ -29,7 +29,7 @@ INSERT INTO TimestampLog VALUES
     (3, '2021-04-30T07:00:00.1234-17:00', '2021-05-01T09:00:00.1234+09:00');
 ```
 
-The input strings include timezone information, but GlueSQL will convert and store them as UTC timestamps.
+The input strings include timezone information, but WormSQL will convert and store them as UTC timestamps.
 
 ## Querying data from a table with TIMESTAMP columns
 
@@ -69,7 +69,7 @@ FROM TimestampLog;
 
 ## Handling invalid timestamp values
 
-If you try to insert an invalid timestamp value into a `TIMESTAMP` column, GlueSQL will return an error:
+If you try to insert an invalid timestamp value into a `TIMESTAMP` column, WormSQL will return an error:
 
 ```sql
 INSERT INTO TimestampLog VALUES (1, '12345-678', '2021-05-01');
@@ -83,4 +83,4 @@ failed to parse timestamp: 12345-678
 
 ## Conclusion
 
-In GlueSQL, the TIMESTAMP data type allows you to store date and time values with precision up to milliseconds. The provided code snippet demonstrates how to create a table with TIMESTAMP columns, insert data into it, and perform various queries and operations on the data. When inserting a TIMESTAMP value, the timezone information is removed, and the data is stored in UTC. This ensures that all time values are consistent and can be easily converted to different time zones when needed.
+In WormSQL, the TIMESTAMP data type allows you to store date and time values with precision up to milliseconds. The provided code snippet demonstrates how to create a table with TIMESTAMP columns, insert data into it, and perform various queries and operations on the data. When inserting a TIMESTAMP value, the timezone information is removed, and the data is stored in UTC. This ensures that all time values are consistent and can be easily converted to different time zones when needed.

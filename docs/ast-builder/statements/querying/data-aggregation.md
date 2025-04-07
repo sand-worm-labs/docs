@@ -1,6 +1,6 @@
 # Data Aggregation
 
-The AST Builder API in GlueSQL allows you to construct SQL queries programmatically. This page provides an introduction to data aggregation using the AST Builder API.
+The AST Builder API in WormSQL allows you to construct SQL queries programmatically. This page provides an introduction to data aggregation using the AST Builder API.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ table("User")
     .select()
     .group_by("age")
     .project("age, count(*)")
-    .execute(glue);
+    .execute(Worm);
 ```
 
 The above code groups the records in the "User" table by the "age" column and returns the age value along with the count of occurrences in each group. The result would be:
@@ -48,7 +48,7 @@ table("User")
     .group_by("age")
     .having("count(*) > 1")
     .project("age, count(*)")
-    .execute(glue);
+    .execute(Worm);
 ```
 
 The above code groups the records in the "User" table by the "age" column, but it only includes groups where the count of occurrences is greater than 1. The result would be:
@@ -60,4 +60,4 @@ age | count(*)
 50  | 2
 ```
 
-This concludes the introduction to data aggregation using the AST Builder API in GlueSQL. You can leverage these methods to perform various aggregations and analyze your data effectively.
+This concludes the introduction to data aggregation using the AST Builder API in WormSQL. You can leverage these methods to perform various aggregations and analyze your data effectively.

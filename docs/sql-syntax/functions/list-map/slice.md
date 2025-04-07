@@ -1,6 +1,6 @@
 # SLICE
 
-The `SLICE` statement is a function in GlueSQL that allows you to retrieve a subsection of a list. It is analogous to slicing operations in many programming languages.
+The `SLICE` statement is a function in WormSQL that allows you to retrieve a subsection of a list. It is analogous to slicing operations in many programming languages.
 
 ## Syntax
 

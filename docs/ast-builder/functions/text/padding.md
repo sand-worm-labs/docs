@@ -1,6 +1,6 @@
 # Padding
 
-The AST Builder API in GlueSQL allows you to execute lpad and rpad functions for text padding.
+The AST Builder API in WormSQL allows you to execute lpad and rpad functions for text padding.
 
 ## lpad
 
@@ -25,14 +25,14 @@ In these examples, the LPAD and RPAD functions should return matching values.
 ```rust
 use {
     crate::*,
-    gluesql_core::{
+    Wormsql_core::{
         ast_builder::{function as f, *},
         prelude::Value::{Null, Str},
     },
 };
 
 test_case!(padding, {
-    let glue = get_glue!();
+    let Worm = get_Worm!();
 
     let actual = values(vec![
         vec![f::lpad("'hello'", 10, None), f::rpad("'hello'", 10, None)],
@@ -51,7 +51,7 @@ test_case!(padding, {
     .select()
     .project("column1 AS lpaded")
     .project("column2 AS rpaded")
-    .execute(glue)
+    .execute(Worm)
     .await;
     let expected = Ok(select_with_null!(
         lpaded                       | rpaded;

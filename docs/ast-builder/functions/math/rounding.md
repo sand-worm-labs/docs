@@ -1,6 +1,6 @@
 # Rounding 
 
-The AST (Abstract Syntax Tree) Builder in GlueSQL provides several mathematical functions, including `round`, `ceil`, and `floor`. These functions are used to perform rounding operations on floating-point numbers.
+The AST (Abstract Syntax Tree) Builder in WormSQL provides several mathematical functions, including `round`, `ceil`, and `floor`. These functions are used to perform rounding operations on floating-point numbers.
 
 For the sake of this tutorial, we'll assume there's a table named `Number` with columns `id` (of type `INTEGER`) and `number` (of type `FLOAT`).
 
@@ -8,7 +8,7 @@ For the sake of this tutorial, we'll assume there's a table named `Number` with 
 
 The `ceil` function rounds up the `number` to the nearest integer value that is greater than or equal to `number`.
 
-In GlueSQL, you can call this function in two ways. Both methods are shown below:
+In WormSQL, you can call this function in two ways. Both methods are shown below:
 
 ```rust
 let actual = table("Number")
@@ -16,7 +16,7 @@ let actual = table("Number")
     .project("id")
     .project(ceil("number"))  // Method 1: Using the ceil function directly
     .project(col("number").ceil())  // Method 2: Calling the ceil method on a column
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -24,7 +24,7 @@ let actual = table("Number")
 
 The `floor` function rounds down the `number` to the nearest integer value that is less than or equal to `number`.
 
-Again, there are two ways to call this function in GlueSQL:
+Again, there are two ways to call this function in WormSQL:
 
 ```rust
 let actual = table("Number")
@@ -32,7 +32,7 @@ let actual = table("Number")
     .project("id")
     .project(floor("number"))  // Method 1: Using the floor function directly
     .project(col("number").floor())  // Method 2: Calling the floor method on a column
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -48,6 +48,6 @@ let actual = table("Number")
     .project("id")
     .project(round("number"))  // Method 1: Using the round function directly
     .project(col("number").round())  // Method 2: Calling the round method on a column
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```

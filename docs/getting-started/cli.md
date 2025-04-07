@@ -6,22 +6,22 @@ sidebar_position: 4
 
 ## Introduction
 
-The Command-Line Interface (CLI) is a tool that allows interactive execution of SQL on GlueSQL. It supports Dot commands for more convenient use, and the .edit command allows immediate modification of query files, which can then be executed with .execute. In addition, it supports HTML table format output for SQL results, making it possible to use the results directly on the web.
+The Command-Line Interface (CLI) is a tool that allows interactive execution of SQL on WormSQL. It supports Dot commands for more convenient use, and the .edit command allows immediate modification of query files, which can then be executed with .execute. In addition, it supports HTML table format output for SQL results, making it possible to use the results directly on the web.
 
 ## Installation
 
-To install the GlueSQL Command-Line Interface (CLI), run the following command:
+To install the WormSQL Command-Line Interface (CLI), run the following command:
 
 ```
-$ cargo install gluesql
+$ cargo install Wormsql
 ```
 
 ## Running the CLI
 
-Once you have installed the GlueSQL CLI, you can use it to interact with your database. The CLI has several options that you can use to customize your database configuration:
+Once you have installed the WormSQL CLI, you can use it to interact with your database. The CLI has several options that you can use to customize your database configuration:
 
 ```
-$ gluesql [--execute ~/sql_path] [--path ~/data_path --storage={sled | json}]
+$ Wormsql [--execute ~/sql_path] [--path ~/data_path --storage={sled | json}]
 ```
 
 ### --execute
@@ -29,23 +29,23 @@ $ gluesql [--execute ~/sql_path] [--path ~/data_path --storage={sled | json}]
 This option allows you to execute a SQL query that is stored in a specific file path. You need to provide the path to the SQL file that contains the query you want to execute. For example, you can use the following command to execute a file located at `~/sql_path/query.sql`
 
 ```
-gluesql --execute ~/sql_path/query.sql
+Wormsql --execute ~/sql_path/query.sql
 ```
 
 ### --path
 
-This option allows you to specify the path to your database's data directory. By default, GlueSQL stores your database in the current directory. However, you can use the --path option to specify a custom directory where you want to store your database files. For example, you can use the following command to specify a custom data directory `~/mydatabase`:
+This option allows you to specify the path to your database's data directory. By default, WormSQL stores your database in the current directory. However, you can use the --path option to specify a custom directory where you want to store your database files. For example, you can use the following command to specify a custom data directory `~/mydatabase`:
 
 ```
-gluesql --path ~/mydatabase
+Wormsql --path ~/mydatabase
 ```
 
 ### --storage
 
-This option allows you to specify the storage engine you want to use for your database. By default, GlueSQL uses the [`memory`](../storages/supported-storages/memory-storage) storage engine. However, you can also use [`sled`](../storages/supported-storages/sled-storage) or [`json`](../storages/supported-storages/json-storage) storage engine by using the --storage option. Note that `sled` and `json` should be with `--path` option. For example, you can use the following command to specify the `json` storage engine:
+This option allows you to specify the storage engine you want to use for your database. By default, WormSQL uses the [`memory`](../storages/supported-storages/memory-storage) storage engine. However, you can also use [`sled`](../storages/supported-storages/sled-storage) or [`json`](../storages/supported-storages/json-storage) storage engine by using the --storage option. Note that `sled` and `json` should be with `--path` option. For example, you can use the following command to specify the `json` storage engine:
 
 ```
-gluesql --path ~/mydatabase --storage=json
+Wormsql --path ~/mydatabase --storage=json
 ```
 
 ## Dot command
@@ -55,7 +55,7 @@ gluesql --path ~/mydatabase --storage=json
 This command shows current [Print options](#print-options).
 
 ```
-gluesql> .show all
+Wormsql> .show all
 tabular ON
 colsep "|"
 colwrap ""
@@ -65,7 +65,7 @@ heading ON
 or you can specify a option
 
 ```
-gluesql> .show colsep
+Wormsql> .show colsep
 colsep "|"
 ```
 
@@ -86,30 +86,30 @@ This command can set each Print options
 ```
 
 ```
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
 
-gluesql> .set tabular off
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> .set tabular off
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 column1|column2
-1|Glue
+1|Worm
 2|SQL
-gluesql> .set colsep ,
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> .set colsep ,
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 column1,column2
-1,Glue
+1,Worm
 2,SQL
-gluesql> .set colwrap '
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> .set colwrap '
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 'column1','column2'
-'1','Glue'
+'1','Worm'
 '2','SQL'
-gluesql> .set heading off
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
-'1','Glue'
+Wormsql> .set heading off
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
+'1','Worm'
 '2','SQL'
 ```
 
@@ -123,26 +123,26 @@ if you execute `.edit`, it opens specified (set on `$EDITOR` env) or OS default 
 
 ```sql
 $ export $EDITOR=vi
-$ gluesql
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+$ Wormsql
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
-gluesql> .edit
+Wormsql> .edit
 ```
 
 Last executed SQL is opened with `vi`
 
 ```sql
---! /tmp/Glue_xxxxx.sql
-VALUES (1, 'Glue'), (2, 'SQL');
+--! /tmp/Worm_xxxxx.sql
+VALUES (1, 'Worm'), (2, 'SQL');
 ```
 
 #### With PATH
 
 ```sql
-gluesql> .edit insert.sql
+Wormsql> .edit insert.sql
 ```
 
 It opens editor and shows the contents of `create_insert.sql`
@@ -150,7 +150,7 @@ It opens editor and shows the contents of `create_insert.sql`
 ```sql
 --! create_insert.sql
 CREATE TABLE Items (id INT, name TEXT);
-INSERT INTO Items VALUES (1, 'Glue'), (2, 'SQL');
+INSERT INTO Items VALUES (1, 'Worm'), (2, 'SQL');
 ```
 
 ### .execute
@@ -158,7 +158,7 @@ INSERT INTO Items VALUES (1, 'Glue'), (2, 'SQL');
 This command executes SQL from PATH
 
 ```sql
-gluesql> .execute create_insert.sql
+Wormsql> .execute create_insert.sql
 Table created
 
 2 rows inserted
@@ -169,43 +169,43 @@ Table created
 This command executes last executed command again.
 
 ```sql
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
 
-gluesql> .run
+Wormsql> .run
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
 ```
 
 Also possible to combinate with `.edit`
 
 ```sql
-gluesql> VALUES (1, 'Glue'), (2, 'SQL');
+Wormsql> VALUES (1, 'Worm'), (2, 'SQL');
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
 
-gluesql> .edit
+Wormsql> .edit
 ```
 
 edit to add `(3, 'Rust')`
 
 ```sql
---! /tmp/Glue_xxxxxx.sql
-VALUES (1, 'Glue'), (2, 'SQL'), (3, 'Rust')
+--! /tmp/Worm_xxxxxx.sql
+VALUES (1, 'Worm'), (2, 'SQL'), (3, 'Rust')
 ```
 
 ```sql
-gluesql> .run
+Wormsql> .run
 | column1 | column2 |
 |---------|---------|
-| 1       | Glue    |
+| 1       | Worm    |
 | 2       | SQL     |
 | 3       | Rust    |
 ```
@@ -231,12 +231,12 @@ If you execute `.help`, you can see various helper command starting with dot(`.`
 
 ## Migration using CLI
 
-GlueSQL CLI supports generating SQL scripts for dumping whole schemas and data.
+WormSQL CLI supports generating SQL scripts for dumping whole schemas and data.
 
 For instance, if you want to dump your database schema and data to a file named `dump.sql`, you can use the following command:
 
 ```
-$ gluesql --path ~/glue_data --dump ./dump.sql
+$ Wormsql --path ~/Worm_data --dump ./dump.sql
 ```
 
 This will create a SQL script in the current directory that you can use to recreate your database.
@@ -244,9 +244,9 @@ This will create a SQL script in the current directory that you can use to recre
 If you want to import the database from the `dump.sql` file, you can use the following command:
 
 ```
-$ gluesql --execute ./dump.sql --path ~/new_data --storage=sled
+$ Wormsql --execute ./dump.sql --path ~/new_data --storage=sled
 ```
 
 This will create a new database in the specified path, using the Sled Storage engine.
 
-That's it! You now know how to use GlueSQL to migrate your database schema and data using the CLI.
+That's it! You now know how to use WormSQL to migrate your database schema and data using the CLI.

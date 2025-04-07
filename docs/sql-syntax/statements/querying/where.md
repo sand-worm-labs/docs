@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # WHERE
 
-In GlueSQL, the `WHERE` clause is used to filter the results of a `SELECT` query based on specific conditions. The `WHERE` clause can be used with various operators and functions to create complex filtering conditions.
+In WormSQL, the `WHERE` clause is used to filter the results of a `SELECT` query based on specific conditions. The `WHERE` clause can be used with various operators and functions to create complex filtering conditions.
 
 Here are some examples based on the provided Rust test code and SQL queries:
 

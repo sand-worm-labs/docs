@@ -1,6 +1,6 @@
 # Position and Indexing 
 
-GlueSQL provides several functions for text manipulation, including finding the index of a substring (`find_idx`), finding the position of a substring (`position`), and getting the leftmost or rightmost characters (`left` and `right`).
+WormSQL provides several functions for text manipulation, including finding the index of a substring (`find_idx`), finding the position of a substring (`position`), and getting the leftmost or rightmost characters (`left` and `right`).
 
 ## Find Index - find_idx
 

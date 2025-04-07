@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # DECIMAL
 
-The `DECIMAL` data type in SQL is used to store exact numeric values, making it suitable for financial calculations and other operations requiring a high level of precision without round-off errors. In GlueSQL, the DECIMAL data type is implemented using a pure Rust library, providing a 96-bit integer number, a scaling factor for specifying the decimal fraction, and a 1-bit sign.
+The `DECIMAL` data type in SQL is used to store exact numeric values, making it suitable for financial calculations and other operations requiring a high level of precision without round-off errors. In WormSQL, the DECIMAL data type is implemented using a pure Rust library, providing a 96-bit integer number, a scaling factor for specifying the decimal fraction, and a 1-bit sign.
 
 Here's an example of how to create a table, insert data, and query data using the `DECIMAL` data type:
 
@@ -47,7 +47,7 @@ Profit      |  2999.50
 
 ## Truncating trailing zeros
 
-In GlueSQL's DECIMAL implementation, trailing zeros are preserved in the binary representation and may be exposed when converting the value to a string. To truncate trailing zeros, you can use the `normalize` or `round_dp` functions in Rust.
+In WormSQL's DECIMAL implementation, trailing zeros are preserved in the binary representation and may be exposed when converting the value to a string. To truncate trailing zeros, you can use the `normalize` or `round_dp` functions in Rust.
 
 ## Conclusion
 

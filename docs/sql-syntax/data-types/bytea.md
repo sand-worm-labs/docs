@@ -1,6 +1,6 @@
 # BYTEA
 
-The `BYTEA` data type in SQL is used to store binary data, such as images, audio files, or any other type of data that needs to be stored in its raw form. In GlueSQL, the BYTEA data type is represented as a sequence of bytes.
+The `BYTEA` data type in SQL is used to store binary data, such as images, audio files, or any other type of data that needs to be stored in its raw form. In WormSQL, the BYTEA data type is represented as a sequence of bytes.
 
 Here's an example of how to create a table, insert data, and query data using the `BYTEA` data type:
 

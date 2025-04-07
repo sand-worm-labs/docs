@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Updating Data
 
-In this section, we will discuss how to update data in a table using GlueSQL.
+In this section, we will discuss how to update data in a table using WormSQL.
 
 ## Basic Update
 
@@ -14,7 +14,7 @@ To update data in a table, you can use the `update` method on a table object, fo
 let actual = table("Foo")
     .update()
     .set("score", col("score").div(10))
-    .execute(glue)
+    .execute(Worm)
     .await;
 let expected = Ok(Payload::Update(3));
 test(actual, expected);
@@ -31,7 +31,7 @@ let actual = table("Foo")
     .update()
     .set("score", "score * 2 + 5")
     .set("flag", col("flag").negate())
-    .execute(glue)
+    .execute(Worm)
     .await;
 let expected = Ok(Payload::Update(3));
 test(actual, expected);
@@ -51,7 +51,7 @@ let actual = table("Foo")
     .set("score", "score * 2 + 5")
     .set("flag", col("flag").negate())
     .filter(col("score").lte(30))
-    .execute(glue)
+    .execute(Worm)
     .await;
 let expected = Ok(Payload::Update(2));
 test(actual, expected);

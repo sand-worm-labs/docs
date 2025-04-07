@@ -1,6 +1,6 @@
 # Case Conversion 
 
-GlueSQL provides several text case conversion functions that allow you to convert text data to upper case, lower case or capitalize each word in a string.
+WormSQL provides several text case conversion functions that allow you to convert text data to upper case, lower case or capitalize each word in a string.
 
 For this tutorial, we assume there's a table named `Item` with various columns including `name`, `opt_name`, and `capped_name` which are of `TEXT` type.
 
@@ -12,7 +12,7 @@ The `upper` function converts a text string to upper case.
 let actual = table("Item")
     .select()
     .project(col("name").upper())  // Convert the 'name' column to upper case
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -24,7 +24,7 @@ The `lower` function converts a text string to lower case.
 let actual = table("Item")
     .select()
     .project(col("name").lower())  // Convert the 'name' column to lower case
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -36,7 +36,7 @@ let actual = table("Item")
     .filter(col("name").lower().eq("'abcd'"))  // Filter records where lower case of 'name' is 'abcd'
     .project("name")
     .project(lower("name"))
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -48,7 +48,7 @@ The `initcap` function converts a text string to initial capital case, i.e., it 
 let actual = table("Item")
     .select()
     .project(col("capped_name").initcap())  // Convert the 'capped_name' column to initial capital case
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```
 
@@ -59,6 +59,6 @@ let actual = table("Item")
     .select()
     .filter(col("capped_name").initcap().eq("'H/I Jk'"))  // Filter records where initial capital case of 'capped_name' is 'H/I Jk'
     .project("capped_name")
-    .execute(glue)
+    .execute(Worm)
     .await;
 ```

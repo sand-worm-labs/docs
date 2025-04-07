@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # LIST
 
-The `LIST` data type in GlueSQL is used to store ordered collections of elements, similar to JSON arrays. The elements can be any valid data supported by GlueSQL, such as numbers, strings, booleans, `null`, `MAP`, or even other nested `LIST` values. Although the input is provided in a JSON array format for convenience, it can store more than just JSON data.
+The `LIST` data type in WormSQL is used to store ordered collections of elements, similar to JSON arrays. The elements can be any valid data supported by WormSQL, such as numbers, strings, booleans, `null`, `MAP`, or even other nested `LIST` values. Although the input is provided in a JSON array format for convenience, it can store more than just JSON data.
 
 Here is an example of creating a table with a `LIST` data type:
 

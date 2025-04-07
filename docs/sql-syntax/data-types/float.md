@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # FLOAT
 
-The `FLOAT` data type in SQL is used to store floating-point numbers. In GlueSQL, the FLOAT data type represents a 64-bit floating-point number, providing the ability to store numbers with decimal values and a wide range of magnitude.
+The `FLOAT` data type in SQL is used to store floating-point numbers. In WormSQL, the FLOAT data type represents a 64-bit floating-point number, providing the ability to store numbers with decimal values and a wide range of magnitude.
 
 Here's an example of how to create a table, insert data, and query data using the `FLOAT` data type:
 

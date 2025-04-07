@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # TIME
 
-In GlueSQL, the `TIME` data type is used to store time values in the format 'HH:MM:SS.SSS'. The code snippet provided demonstrates how to create a table with `TIME` columns, insert data into it, and perform various queries and operations on the data.
+In WormSQL, the `TIME` data type is used to store time values in the format 'HH:MM:SS.SSS'. The code snippet provided demonstrates how to create a table with `TIME` columns, insert data into it, and perform various queries and operations on the data.
 
 ## Creating a table with TIME columns
 
@@ -75,7 +75,7 @@ FROM TimeLog LIMIT 1;
 
 ## Handling invalid time values
 
-If you try to insert an invalid time value into a `TIME` column, GlueSQL will return an error:
+If you try to insert an invalid time value into a `TIME` column, WormSQL will return an error:
 
 ```sql
 INSERT INTO TimeLog VALUES (1, '12345-678', '20:05:01');
@@ -89,4 +89,4 @@ failed to parse time 12345-678
 
 ## Conclusion
 
-In GlueSQL, the TIME data type is used to store time values in the format 'HH:MM:SS.SSS'. The provided code snippet demonstrates how to create a table with TIME columns, insert data into it, and perform various queries and operations on the data. GlueSQL supports arithmetic operations on TIME columns using INTERVAL, and you can also add a TIME column to a DATE value to get a TIMESTAMP result. Keep in mind that inserting invalid time values into a TIME column will result in an error.
+In WormSQL, the TIME data type is used to store time values in the format 'HH:MM:SS.SSS'. The provided code snippet demonstrates how to create a table with TIME columns, insert data into it, and perform various queries and operations on the data. WormSQL supports arithmetic operations on TIME columns using INTERVAL, and you can also add a TIME column to a DATE value to get a TIMESTAMP result. Keep in mind that inserting invalid time values into a TIME column will result in an error.
