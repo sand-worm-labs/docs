@@ -36,10 +36,9 @@ If you're interested in learning more about WormSQL, we recommend the following 
 2. [Revolutionizing Databases by Unifying Query Interfaces](https://Wormsql.org/blog/revolutionizing-databases-by-unifying-query-interfaces)
 3. [Test-Driven Documentation - Automating User Manual Creation](https://Wormsql.org/blog/test-driven-documentation)
 
-- **[Quick Start](/docs/quick-start)** – Set up SandWorm and run your first query.
-- **[Web App](/docs/web-app)** – Learn about the web-based IDE for querying data.
-- **[CLI](/docs/cli)** – Use SandWorm from the command line for advanced automation.
-- **[WQL Query Language](/docs/wql-query)** – Understand the syntax and capabilities of WQL.
+- **[Quick Start](/quick-start)** – Set up SandWorm and run your first query.
+- **[Web App](/web-app)** – Learn about the web-based IDE for querying data.
+- **[WQL Query Language](/sql-syntax/intro.md)** – Understand the syntax and capabilities of WQL.
 
 ---
 
@@ -59,7 +58,7 @@ LIMIT 10;
 
 This query fetches the last 10 balance changes for a given address, sorted in descending order by timestamp.
 
-Continue to the [Quick Start](/docs/quick-start) guide to run your first query!
+Continue to the [Quick Start](/quick-start) guide to run your first query!
 
 ```rust
 table("Foo")

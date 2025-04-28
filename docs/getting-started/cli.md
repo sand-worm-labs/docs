@@ -40,9 +40,6 @@ This option allows you to specify the path to your database's data directory. By
 Wormsql --path ~/mydatabase
 ```
 
-### --storage
-
-This option allows you to specify the storage engine you want to use for your database. By default, WormSQL uses the [`memory`](../storages/supported-storages/memory-storage) storage engine. However, you can also use [`sled`](../storages/supported-storages/sled-storage) or [`json`](../storages/supported-storages/json-storage) storage engine by using the --storage option. Note that `sled` and `json` should be with `--path` option. For example, you can use the following command to specify the `json` storage engine:
 
 ```
 Wormsql --path ~/mydatabase --storage=json
