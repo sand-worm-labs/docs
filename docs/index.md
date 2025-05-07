@@ -5,13 +5,6 @@ sidebar_position: 1
 # Introduction
 
 **SandWorm** ia an open-source blockchain data indexer designed specifically for the Sui network. SandWorm provides an easy-to-use interface for querying blockchain data using a SQL-like query language called **WQL (Worm Query Language)**. Unlike traditional indexers, SandWorm offers a fully decentralized and community-driven approach to blockchain analytics.
-[![crates.io](https://img.shields.io/crates/v/Wormsql.svg)](https://crates.io/crates/Wormsql)
-[![npm](https://img.shields.io/npm/v/Wormsql?color=red)](https://www.npmjs.com/package/Wormsql)
-[![LICENSE](https://img.shields.io/crates/l/Wormsql.svg)](https://github.com/Wormsql/Wormsql/blob/main/LICENSE)
-![Rust](https://github.com/Wormsql/Wormsql/workflows/Rust/badge.svg)
-[![docs.rs](https://docs.rs/Wormsql/badge.svg)](https://docs.rs/Wormsql)
-[![Chat](https://img.shields.io/discord/780298017940176946?logo=discord&logoColor=white)](https://discord.gg/C6TDEgzDzY)
-[![Coverage Status](https://coveralls.io/repos/github/Wormsql/Wormsql/badge.svg?branch=main)](https://coveralls.io/github/Wormsql/Wormsql?branch=main)
 
 ## What SandWorm Offers
 
