@@ -6,30 +6,6 @@ sidebar_position: 7
 
 In WormSQL, the `TIMESTAMP` data type is used to store date and time values in the format 'YYYY-MM-DD HH:MM:SS.SSSS'. Although timezone information can be included in the input string, WormSQL stores all `TIMESTAMP` values in UTC, discarding the timezone information.
 
-## Creating a table with TIMESTAMP columns
-
-To create a table with columns of type `TIMESTAMP`, use the `CREATE TABLE` statement:
-
-```sql
-CREATE TABLE TimestampLog (
-    id INTEGER,
-    t1 TIMESTAMP,
-    t2 TIMESTAMP
-);
-```
-
-## Inserting data into a table with TIMESTAMP columns
-
-To insert data into a table with `TIMESTAMP` columns, use the `INSERT INTO` statement:
-
-```sql
-INSERT INTO TimestampLog VALUES
-    (1, '2020-06-11 11:23:11Z',           '2021-03-01'),
-    (2, '2020-09-30 12:00:00 -07:00',     '1989-01-01T00:01:00+09:00'),
-    (3, '2021-04-30T07:00:00.1234-17:00', '2021-05-01T09:00:00.1234+09:00');
-```
-
-The input strings include timezone information, but WormSQL will convert and store them as UTC timestamps.
 
 ## Querying data from a table with TIMESTAMP columns
 

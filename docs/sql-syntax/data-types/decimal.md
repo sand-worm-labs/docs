@@ -8,24 +8,6 @@ The `DECIMAL` data type in SQL is used to store exact numeric values, making it 
 
 Here's an example of how to create a table, insert data, and query data using the `DECIMAL` data type:
 
-## Creating a table with a DECIMAL column
-
-To create a table with a DECIMAL column, use the following SQL syntax:
-
-```sql
-CREATE TABLE financial_data (description TEXT, value DECIMAL);
-```
-
-## Inserting data into the DECIMAL column
-
-To insert data into the DECIMAL column, provide the exact numeric values:
-
-```sql
-INSERT INTO financial_data (description, value) VALUES
-    ('Revenue', 15000.25),
-    ('Expense', 12000.75),
-    ('Profit', 2999.50);
-```
 
 ## Querying data from the DECIMAL column
 

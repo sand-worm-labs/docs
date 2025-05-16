@@ -20,33 +20,6 @@ The `INTERVAL` data type in WormSQL is used to represent a period of time. In ac
 - MINUTE TO SECOND
 - SECOND
 
-## Creating a Table with INTERVAL Columns
-
-To create a table with `INTERVAL` columns, simply use the `INTERVAL` keyword for the data type:
-
-```sql
-CREATE TABLE IntervalLog (
-    id INTEGER,
-    interval1 INTERVAL,
-    interval2 INTERVAL
-);
-```
-
-## Inserting INTERVAL Values
-
-To insert `INTERVAL` values into a table, use the `INTERVAL` keyword followed by a string literal representing the interval value:
-
-```sql
-INSERT INTO IntervalLog VALUES
-    (1, INTERVAL '1-2' YEAR TO MONTH,         INTERVAL 30 MONTH),
-    (2, INTERVAL 12 DAY,                      INTERVAL '35' HOUR),
-    (3, INTERVAL '12' MINUTE,                 INTERVAL 300 SECOND),
-    (4, INTERVAL '-3 14' DAY TO HOUR,         INTERVAL '3 12:30' DAY TO MINUTE),
-    (5, INTERVAL '3 14:00:00' DAY TO SECOND,  INTERVAL '3 12:30:12.1324' DAY TO SECOND),
-    (6, INTERVAL '12:00' HOUR TO MINUTE,      INTERVAL '-12:30:12' HOUR TO SECOND),
-    (7, INTERVAL '-1000-11' YEAR TO MONTH,    INTERVAL '-30:11' MINUTE TO SECOND);
-```
-
 ## INTERVAL Subtypes and Syntax
 
 Here are some examples of how to use different `INTERVAL` subtypes:

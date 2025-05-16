@@ -8,24 +8,6 @@ The `FLOAT` data type in SQL is used to store floating-point numbers. In WormSQL
 
 Here's an example of how to create a table, insert data, and query data using the `FLOAT` data type:
 
-## Creating a table with a FLOAT column
-
-To create a table with a FLOAT column, use the following SQL syntax:
-
-```sql
-CREATE TABLE product_prices (product_name TEXT, price FLOAT);
-```
-
-## Inserting data into the FLOAT column
-
-To insert data into the FLOAT column, provide the floating-point values:
-
-```sql
-INSERT INTO product_prices (product_name, price) VALUES
-    ('Product A', 19.99),
-    ('Product B', 39.49),
-    ('Product C', 12.75);
-```
 
 ## Querying data from the FLOAT column
 

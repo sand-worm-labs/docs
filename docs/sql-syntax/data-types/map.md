@@ -6,24 +6,6 @@ sidebar_position: 11
 
 The `MAP` data type in WormSQL is used to store nested key-value pairs, similar to JSON objects. The object keys must be strings, and the values can be any valid data supported by WormSQL, such as numbers, strings, booleans, `null`, or even other nested `MAP` values. Although the input is provided in a JSON object format for convenience, it can store more than just JSON data.
 
-Here is an example of creating a table with a `MAP` data type:
-
-```sql
-CREATE TABLE MapType (
-    id INTEGER,
-    nested MAP
-);
-```
-
-You can insert data into the table using JSON-like syntax:
-
-```sql
-INSERT INTO MapType VALUES
-    (1, '{"a": true, "b": 2}'),
-    (2, '{"a": {"foo": "ok", "b": "steak"}, "b": 30}'),
-    (3, '{"a": {"b": {"c": {"d": 10}}}}');
-```
-
 To access the nested values in a `MAP`, you can use the index operator `[]`:
 
 ```sql
