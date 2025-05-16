@@ -9,12 +9,6 @@ WormSQL is an SQL database that provides a unique feature: it allows you to work
 
 ## Creating a Schemaless Table
 
-To create a schemaless table, you don't need to specify columns when creating the table. For example:
-
-```sql
-CREATE TABLE Sample;
-```
-
 This creates a schemaless table. You can now insert data freely into each row, like a NoSQL database. Nested data is also supported.
 
 ## Example SQL Queries
