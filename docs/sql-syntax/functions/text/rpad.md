@@ -25,14 +25,8 @@ The function returns a new string that is the same as the original string, but w
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
+Consider a table `Item`:
 
-```sql
-CREATE TABLE Item (
-    name TEXT
-);
-INSERT INTO Item VALUES ('hello');
-```
 
 You can use the `RPAD` function to pad the `name` values to a length of 10 with the character 'b':
 

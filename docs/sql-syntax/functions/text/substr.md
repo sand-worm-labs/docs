@@ -26,12 +26,9 @@ The function returns a string which is a substring of the original string. The s
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
+Consider a table `Item`:
 
-```sql
-CREATE TABLE Item (name TEXT);
-INSERT INTO Item VALUES ('Blop mc blee'), ('B'), ('Steven the &long named$ folken!');
-```
+
 
 You can use the `SUBSTR` function to get a substring from the `name` values:
 

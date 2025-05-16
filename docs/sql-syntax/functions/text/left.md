@@ -24,15 +24,6 @@ The function returns a string, which consists of the specified number of charact
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (
-    name TEXT DEFAULT LEFT('abc', 1)
-);
-INSERT INTO Item VALUES ('Blop mc blee'), ('B'), ('Steven the &long named$ folken!');
-```
-
 You can use the `LEFT` function to extract the first three characters of each `name`:
 
 ```sql

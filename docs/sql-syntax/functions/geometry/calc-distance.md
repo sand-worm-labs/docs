@@ -17,19 +17,6 @@ CALC_DISTANCE(point1, point2)
 
 Consider the following table `Foo`:
 
-```sql
-CREATE TABLE Foo (
-    geo1 Point,
-    geo2 Point,
-    bar Float
-);
-```
-
-With the following data:
-
-```sql
-INSERT INTO Foo VALUES (POINT(0.3134, 3.156), POINT(1.415, 3.231), 3);
-```
 
 ### Example 1: Calculate the distance between two points
 

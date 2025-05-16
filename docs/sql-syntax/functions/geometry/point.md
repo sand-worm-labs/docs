@@ -11,17 +11,6 @@ POINT(x, y)
 
 ## Examples
 
-Create a table with a `POINT` data type column:
-
-```sql
-CREATE TABLE Foo (point_field POINT);
-```
-
-Insert a record with a point value:
-
-```sql
-INSERT INTO Foo VALUES (POINT(0.3134, 0.156));
-```
 
 Select the `point_field` column:
 

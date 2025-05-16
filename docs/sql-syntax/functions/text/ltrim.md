@@ -23,15 +23,6 @@ The function returns a new string that is the same as the original string, but w
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (
-    name TEXT
-);
-INSERT INTO Item VALUES (' zzzytest');
-```
-
 You can use the `LTRIM` function to remove leading spaces from the `name` values:
 
 ```sql

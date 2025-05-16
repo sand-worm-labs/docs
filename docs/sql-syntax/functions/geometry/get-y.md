@@ -16,18 +16,6 @@ GET_Y(point)
 
 Consider the following table `PointGroup`:
 
-```sql
-CREATE TABLE PointGroup (
-    point_field POINT
-);
-```
-
-With the following data:
-
-```sql
-INSERT INTO PointGroup VALUES (POINT(0.3134, 0.156));
-```
-
 ### Example 1: Get the Y-coordinate from a point
 
 ```sql

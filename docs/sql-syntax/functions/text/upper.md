@@ -22,14 +22,7 @@ The function returns a new string that is the same as the original string, but w
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (
-    name TEXT
-);
-INSERT INTO Item VALUES ('abcd'), ('Abcd'), ('ABCD');
-```
+Consider a table `Item` :
 
 You can use the `UPPER` function to convert all `name` values to uppercase:
 

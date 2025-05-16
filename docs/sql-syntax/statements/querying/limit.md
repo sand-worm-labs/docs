@@ -34,19 +34,6 @@ OFFSET number_of_rows_to_skip;
 
 ## Examples
 
-Consider the following `Test` table:
-
-```sql
-CREATE TABLE Test (
-    id INTEGER
-);
-```
-
-With the following records:
-
-```sql
-INSERT INTO Test VALUES (1), (2), (3), (4), (5), (6), (7), (8);
-```
 
 ### Using LIMIT
 

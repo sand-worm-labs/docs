@@ -40,14 +40,6 @@ You can also use the ASCII function in a SELECT statement. Consider the followin
 | --- | ---- |
 | 1   | 'F'  |
 
-```sql
-CREATE TABLE Ascii (
-    id INTEGER,
-    text TEXT
-);
-INSERT INTO Ascii VALUES (1, 'F');
-```
-
 You can select the ASCII value of the 'text' column:
 
 ```sql
@@ -77,14 +69,3 @@ If no argument is passed to the ASCII function, it will also throw an error:
 ```sql
 SELECT ASCII() AS ascii FROM Ascii;
 ```
-
-This will throw an error because the ASCII function expects one argument.
-
-Remember, the ASCII function expects a single character. If the column value contains more than one character, it will throw an error:
-
-```sql
-INSERT INTO Ascii VALUES (1, 'Foo');
-SELECT ASCII(text) AS ascii FROM Ascii;
-```
-
-This will throw an error because 'Foo' contains more than one character.

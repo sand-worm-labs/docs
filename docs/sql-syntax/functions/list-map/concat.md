@@ -16,21 +16,6 @@ CONCAT(list_value1, list_value2, ...)
 
 Consider the following table `ListTypeConcat`:
 
-```sql
-CREATE TABLE ListTypeConcat (
-    id INTEGER,
-    items LIST,
-    items2 LIST
-);
-```
-
-With the following data:
-
-```sql
-INSERT INTO ListTypeConcat VALUES
-    (1, '[1, 2, 3]', '["one", "two", "three"]');
-```
-
 ### Example 1: CONCAT two lists
 
 ```sql

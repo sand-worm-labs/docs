@@ -16,19 +16,6 @@ SELECT SLICE(column_name, start_index, length) AS alias_name FROM table_name;
 
 Consider the following table `Test`:
 
-```sql
-CREATE TABLE Test (
-    list LIST
-);
-```
-
-With the following data:
-
-```sql
-INSERT INTO Test VALUES
-('[1,2,3,4]');
-```
-
 ### 1. Basic Slicing
 Retrieve the first 2 elements from a list.
 

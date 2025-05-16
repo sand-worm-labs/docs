@@ -14,21 +14,6 @@ If `LEADING`, `TRAILING`, or `BOTH` is not specified, `TRIM` function will remov
 
 Here we are creating a table named `Item` with a default value for the `name` column. The default value is obtained by concatenating two strings. The first string is the result of trimming leading 'a' from 'aabc' and the second string is the result of trimming spaces from '   good  '.
 
-```sql
-CREATE TABLE Item (
-    name TEXT DEFAULT TRIM(LEADING 'a' FROM 'aabc') || TRIM('   good  ')
-)
-```
-
-We insert some data into the `Item` table:
-
-```sql
-INSERT INTO Item VALUES
-    ('      Left blank'),
-    ('Right blank     '),
-    ('     Blank!     '),
-    ('Not Blank');
-```
 
 The `TRIM` function is used in a `SELECT` statement to remove leading and trailing spaces from the `name` column in the `Item` table:
 
@@ -39,22 +24,12 @@ SELECT TRIM(name) FROM Item;
 The `TRIM` function can also be used with `NULL` values. If the value is `NULL`, the `TRIM` function will return `NULL`.
 
 ```sql
-CREATE TABLE NullName (name TEXT NULL);
-INSERT INTO NullName VALUES (NULL);
 SELECT TRIM(name) AS test FROM NullName;
 ```
 
 You can also specify a specific character to remove from the string. The following example removes 'xyz' from the string:
 
 ```sql
-CREATE TABLE Test (name TEXT);
-INSERT INTO Test VALUES
-        ('     blank     '), 
-        ('xxxyzblankxyzxx'), 
-        ('xxxyzblank     '),
-        ('     blankxyzxx'),
-        ('  xyzblankxyzxx'),
-        ('xxxyzblankxyz  ');
 SELECT TRIM(BOTH 'xyz' FROM name) FROM Test;
 ```
 

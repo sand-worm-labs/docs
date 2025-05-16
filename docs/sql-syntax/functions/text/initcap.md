@@ -18,23 +18,6 @@ INITCAP( string )
 
 Let's consider a few examples to understand how to use the `INITCAP` function.
 
-Create a table named `Item` with a column `name`:
-
-```sql
-CREATE TABLE Item (
-    name TEXT DEFAULT 'abcd'
-);
-```
-
-Insert some data into the `Item` table:
-
-```sql
-INSERT INTO Item VALUES
-('h/i jk'),
-(NULL),
-('H/I JK');
-```
-
 Select rows where the `INITCAP(name)` is equal to 'H/I Jk':
 
 ```sql
