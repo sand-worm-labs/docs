@@ -17,7 +17,7 @@ const config: Config = {
   tagline: "WormSQL is quite sticky. It attaches to anywhere",
   favicon: "img/favicon.ico",
 
-  url: "https://sandworm.xyz",
+  url: "https://sandwormdocs.vercel.app",
   baseUrl: isBlog ? "/blog/" : docsBaseUrl,
 
   onBrokenLinks: "throw",
@@ -76,7 +76,7 @@ const config: Config = {
           ? [
               { to: "/", label: "Blog", position: "left" },
               {
-                href: "https://sandworm.xyz/docs",
+                href: "https://sandwormdocs.vercel.app",
                 label: "Docs",
                 position: "right",
               },
@@ -102,7 +102,7 @@ const config: Config = {
               },
 
               {
-                href: "https://sandworm.xyz/blog",
+                href: "https://sandwormdocs.vercel.app/blog",
                 label: "Blog",
                 position: "right",
               },
