@@ -23,11 +23,6 @@ In this example, the `CAST` function is used to convert the string `'TRUE'` to a
 
 ### Converting a column to a different data type
 
-Suppose you have a table called `employees` with the following structure:
-
-```sql
-CREATE TABLE employees (id INT, name TEXT, salary TEXT);
-```
 
 To calculate the total salary of all employees, you can use the `CAST` function to convert the `salary` column to a `DECIMAL` data type:
 

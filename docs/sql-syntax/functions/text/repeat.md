@@ -24,13 +24,6 @@ The function returns a string which is the concatenation of the input string rep
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (name TEXT);
-INSERT INTO Item VALUES ('hello');
-```
-
 You can use the `REPEAT` function to repeat the `name` values:
 
 ```sql

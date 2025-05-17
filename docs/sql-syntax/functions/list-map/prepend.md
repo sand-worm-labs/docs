@@ -13,24 +13,6 @@ PREPEND(list, element)
 
 ## Examples
 
-First, create a table named `Prepend` with columns for the list, an integer element, and a text element:
-
-```sql
-CREATE TABLE Prepend (
-    id INTEGER,
-    items LIST,
-    element INTEGER,
-    element2 TEXT
-);
-```
-
-Insert some data into the `Prepend` table:
-
-```sql
-INSERT INTO Prepend VALUES
-(1, '[1, 2, 3]', 0, 'Foo');
-```
-
 Use the `PREPEND` function to prepend the integer element to the list:
 
 ```sql

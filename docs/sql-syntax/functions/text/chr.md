@@ -32,21 +32,6 @@ Please note that the CHR function expects an integer value between 0 and 255. If
 VALUES(CHR(7070));
 ```
 
-This will throw an error because 7070 is not a valid ASCII value.
-
-You can also use the CHR function in a SELECT statement. Consider the following table named 'Chr':
-
-| id  | num |
-| --- | --- |
-| 1   | 70  |
-
-```sql
-CREATE TABLE Chr (
-    id INTEGER,
-    num INTEGER
-);
-INSERT INTO Chr VALUES (1, 70);
-```
 
 You can select the character for the 'num' column:
 
@@ -75,7 +60,6 @@ This will throw an error because 'ukjhg' is not an integer value.
 Remember, the CHR function expects an integer value between 0 and 255. If the column value is outside this range, it will throw an error:
 
 ```sql
-INSERT INTO Chr VALUES (1, 4345);
 SELECT CHR(num) AS chr FROM Chr;
 ```
 

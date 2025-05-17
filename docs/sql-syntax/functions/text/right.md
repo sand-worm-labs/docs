@@ -25,14 +25,7 @@ The function returns a string, which consists of the specified number of charact
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (
-    name TEXT
-);
-INSERT INTO Item VALUES ('Blop mc blee'), ('B'), ('Steven the &long named$ folken!');
-```
+Consider a table `Item`:
 
 You can use the `RIGHT` function to extract the last three characters of each `name`:
 

@@ -3,12 +3,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #a8b1ff;
   --ifm-color-primary-dark: #9da5f3;
   --ifm-color-primary-darker: #7c84ce;
   --ifm-color-primary-darkest: #4b5293;
@@ -24,18 +21,21 @@
 
   --ifm-heading-font-weight: 600;
   --ifm-code-font-size: 85%;
+  --ifm-color-primary: #ff6b00;
+  --ifm-code-border-radius: 0;
+  --ifm-pagination-nav-border-radius: 0;
 }
 
 html[data-theme="dark"] {
-  --ifm-navbar-background-color: #161618;
-  --ifm-background-color: #1b1b1f;
+  --ifm-navbar-background-color: #000000;
+  --ifm-background-color: #000000;
   --ifm-menu-color: #98989f;
   --ifm-color-content: #d1d5db;
+  --ifm-hr-background-color: #333333;
+  --ifm-color-emphasis-300: #333333;
 }
 
 body,
-h1,
-h2,
 h3,
 h4,
 h5,
@@ -49,8 +49,13 @@ article h1 {
   word-wrap: break-word;
 }
 
-h2 {
+h1,
+h2,
+h3 {
   font-weight: 600;
+  letter-spacing: -0.02em;
+  font-family: "DM Mono", monospace;
+  line-height: 1.2;
 }
 
 h3,
@@ -81,7 +86,7 @@ footer.footer--dark {
 }
 
 .menu {
-  border-left: none;
+  border-right: 1px solid #333333;
 }
 
 .menu__link {
@@ -107,11 +112,77 @@ footer.footer--dark {
 }
 
 pre code {
-  background-color: #161618 !important;
+  border: 1px solid #333;
+  border-radius: 0 !important;
+  background-color: #1e1e1e !important;
+  color: #f8f8f2 !important;
+  padding: 0.1em 0.4em;
+  font-family: "DM Mono", monospace;
+  font-size: 110%;
 }
 
 code .token-line {
   line-height: 1.7 !important;
+}
+
+/* Overwritting the default code setting so it match more with web app */
+.token.keyword {
+  color: rgb(249, 238, 154) !important;
+}
+
+.token.function {
+  color: #ff9b3d !important;
+}
+
+.token.comment {
+  color: #6a6a6a !important;
+  font-style: italic !important;
+}
+
+.token.string {
+  color: rgb(145, 158, 107) !important;
+}
+
+.token.number {
+  color: #f39c12 !important;
+}
+
+.token.variable {
+  color: #ff6b00 !important;
+}
+
+.token.operator {
+  color: #ffffff !important;
+}
+
+.token.class-name {
+  color: #f8f8f2 !important;
+}
+
+.token.constant {
+  color: #ae81ff !important;
+}
+
+.token.builtin {
+  color: #66d9ef !important;
+}
+
+.token.plain {
+  color: var(--ifm-color-content) !important;
+}
+
+.navbar--fixed-top {
+  border-bottom: 1px solid #333333;
+}
+
+.navbar__brand {
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace;
+}
+
+.navbar__brand b {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 @media (min-width: 997px) {

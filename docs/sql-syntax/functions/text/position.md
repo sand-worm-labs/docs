@@ -23,15 +23,7 @@ The function returns an integer representing the position of the first occurrenc
 
 ## Examples
 
-Consider a table `Food` created and filled with the following data:
-
-```sql
-CREATE TABLE Food (
-    name TEXT
-);
-INSERT INTO Food VALUES ('pork');
-INSERT INTO Food VALUES ('burger');
-```
+Consider a table `Food`:
 
 You can use the `POSITION` function to find the position of a substring within the `name` values:
 

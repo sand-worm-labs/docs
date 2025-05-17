@@ -10,23 +10,8 @@ GENERATE_UUID()
 
 ## Usage
 
-### Creating a table with a UUID column
-
-You can use the `GENERATE_UUID` function as the default value for a UUID column in a table.
-
-```sql
-CREATE TABLE SingleItem (id UUID DEFAULT GENERATE_UUID());
-```
-
 This SQL statement creates a table called `SingleItem` with a column named `id` of data type `UUID`. The default value for the `id` column is generated using the `GENERATE_UUID` function.
 
-### Inserting data with a UUID column
-
-You can also use the `GENERATE_UUID` function directly when inserting data into a table.
-
-```sql
-INSERT INTO SingleItem VALUES (GENERATE_UUID());
-```
 
 This SQL statement inserts a new row into the `SingleItem` table with a UUID value generated using the `GENERATE_UUID` function.
 

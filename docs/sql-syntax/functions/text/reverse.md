@@ -22,13 +22,6 @@ If the parameter is not a string value, a `EvaluateError::FunctionRequiresString
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
-
-```sql
-CREATE TABLE Item (name TEXT);
-INSERT INTO Item VALUES ('Let''s meet');
-```
-
 You can use the `REVERSE` function to reverse the `name` values:
 
 ```sql

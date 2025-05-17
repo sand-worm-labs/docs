@@ -11,38 +11,11 @@ WormSQL is a SQL database engine written in Rust, designed to be lightweight, fa
 
 Here's a list of some basic SQL statements you can use with WormSQL:
 
-## Creating Tables
-
-```sql
-CREATE TABLE table_name (
-    column_name1 data_type1,
-    column_name2 data_type2,
-    ...
-);
-```
-
-## Inserting Data
-
-```sql
-INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);
-```
 
 ## Selecting Data
 
 ```sql
 SELECT column1, column2, ... FROM table_name WHERE conditions;
-```
-
-## Updating Data
-
-```sql
-UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE conditions;
-```
-
-## Deleting Data
-
-```sql
-DELETE FROM table_name WHERE conditions;
 ```
 
 For a complete list of supported SQL features, you can visit the WormSQL GitHub repository's test suite folder, even if you're not familiar with Rust code:

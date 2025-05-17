@@ -23,14 +23,9 @@ The function returns a new string that is the same as the original string, but w
 
 ## Examples
 
-Consider a table `Item` created and filled with the following data:
+Consider a table `Item` :
 
-```sql
-CREATE TABLE Item (
-    name TEXT
-);
-INSERT INTO Item VALUES ('testxxzx ');
-```
+
 
 You can use the `RTRIM` function to remove trailing spaces from the `name` values:
 

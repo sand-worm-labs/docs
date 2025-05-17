@@ -12,27 +12,6 @@ IFNULL(expression1, expression2)
 
 Consider the following `SingleItem` table:
 
-```sql
-CREATE TABLE SingleItem (
-    id INTEGER NULL,
-    int8 INT8 NULL,
-    dec DECIMAL NULL,
-    dt DATE NULL,
-    mystring TEXT NULL,
-    mybool BOOLEAN NULL,
-    myfloat FLOAT NULL,
-    mytime TIME NULL,
-    mytimestamp TIMESTAMP NULL
-);
-```
-
-Insert two records into the `SingleItem` table:
-
-```sql
-INSERT INTO SingleItem VALUES (0, 1, 2, '2022-05-23', 'this is a string', true, 3.15, '01:02:03', '1970-01-01 00:00:00 -00:00');
-INSERT INTO SingleItem VALUES (null, null, null, null, null, null, null, null, null);
-```
-
 Example 1: Using `IFNULL` with integer values:
 
 ```sql

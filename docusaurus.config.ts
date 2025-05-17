@@ -13,11 +13,11 @@ const config: Config = {
   },
   themes: ["@docusaurus/theme-mermaid"],
 
-  title: "WormSQL",
+  title: "Sandworm Documentation",
   tagline: "WormSQL is quite sticky. It attaches to anywhere",
   favicon: "img/favicon.ico",
 
-  url: "https://sandwormdocs.vercel.app",
+  url: "https://docs.sandwormlabs.xyz/",
   baseUrl: isBlog ? "/blog/" : docsBaseUrl,
 
   onBrokenLinks: "throw",
@@ -66,7 +66,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "Sandworm",
+      title: "Sandw0rm",
       logo: {
         alt: "Your Logo Alt Text",
         src: "img/logo.svg",
@@ -76,7 +76,7 @@ const config: Config = {
           ? [
               { to: "/", label: "Blog", position: "left" },
               {
-                href: "https://sandwormdocs.vercel.app",
+                href: "https://docs.sandwormlabs.xyz/docs",
                 label: "Docs",
                 position: "right",
               },
@@ -102,7 +102,7 @@ const config: Config = {
               },
 
               {
-                href: "https://sandwormdocs.vercel.app/blog",
+                href: "https://docs.sandwormlabs.xyz/blog",
                 label: "Blog",
                 position: "right",
               },
@@ -116,7 +116,7 @@ const config: Config = {
     },
     prism: {
       theme: themes.github,
-      darkTheme: themes.dracula,
+      darkTheme: themes.duotoneDark,
       additionalLanguages: ["rust", "toml"],
     },
     ...(isBlog && {
@@ -135,7 +135,7 @@ const config: Config = {
           {
             title: "Resources",
             items: [
-              { label: "Blog", href: "https://Wormsql.org/blog" },
+              { label: "Blog", href: "https://docs.sandwormlabs.xyz/blog" },
               { label: "GitHub", href: "https://github.com/Wormsql/Wormsql" },
               { label: "Discord", href: "https://discord.gg/C6TDEgzDzY" },
             ],

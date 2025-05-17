@@ -9,31 +9,12 @@ WormSQL is an SQL database that provides a unique feature: it allows you to work
 
 ## Creating a Schemaless Table
 
-To create a schemaless table, you don't need to specify columns when creating the table. For example:
-
-```sql
-CREATE TABLE Sample;
-```
-
 This creates a schemaless table. You can now insert data freely into each row, like a NoSQL database. Nested data is also supported.
 
 ## Example SQL Queries
 
 Here are some example SQL queries that demonstrate how to use WormSQL with schemaless data:
 
-### Creating Tables
-
-```sql
-CREATE TABLE Player;
-CREATE TABLE Item;
-```
-
-### Inserting Data
-
-```sql
-INSERT INTO Player VALUES ('{"id": 1001, "name": "Beam", "flag": 1}'), ('{"id": 1002, "name": "Seo"}');
-INSERT INTO Item VALUES ('{"id": 100, "name": "Test 001", "dex": 324, "rare": false, "obj": {"cost": 3000}}'), ('{"id": 200}');
-```
 
 ### Selecting Data
 
@@ -43,13 +24,6 @@ SELECT name, dex, rare FROM Item;
 SELECT * FROM Item;
 ```
 
-### Updating Data
-
-```sql
-DELETE FROM Item WHERE id > 100;
-UPDATE Item SET id = id + 1, rare = NOT rare;
-UPDATE Item SET new_field = 'Hello';
-```
 
 ### Selecting with Aliases and Joins
 
@@ -67,55 +41,6 @@ WHERE flag IS NOT NULL;
 
 Here are some example SQL queries that will raise errors, along with explanations of the issues:
 
-### Inserting Invalid Data
-
-- Inserting multiple values for a schemaless row:
-
-  ```sql
-  INSERT INTO Item VALUES ('{"a": 10}', '{"b": true}');
-  ```
-  
-  Schemaless rows accept only single values.
-
-- Inserting data from a SELECT statement:
-
-  ```sql
-  INSERT INTO Item SELECT id, name FROM Item LIMIT 1;
-  ```
-  
-  Schemaless rows cannot be inserted using a SELECT statement.
-
-- Inserting a JSON array:
-
-  ```sql
-  INSERT INTO Item VALUES ('[1, 2, 3]');
-  ```
-  
-  Only JSON objects are allowed for schemaless rows.
-
-- Inserting a boolean value:
-
-  ```sql
-  INSERT INTO Item VALUES (true);
-  ```
-  
-  Text literals are required for schemaless rows.
-
-- Inserting an expression result:
-
-  ```sql
-  INSERT INTO Item VALUES (CAST(1 AS INTEGER) + 4);
-  ```
-  
-  Map or string values are required for schemaless rows.
-
-- Inserting data from a SELECT statement with LIMIT:
-
-  ```sql
-  INSERT INTO Item SELECT id FROM Item LIMIT 1;
-  ```
-  
-  Map type values are required for schemaless rows.
 
 ### Selecting Invalid Data
 

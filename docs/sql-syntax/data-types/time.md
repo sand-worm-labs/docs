@@ -6,28 +6,6 @@ sidebar_position: 8
 
 In WormSQL, the `TIME` data type is used to store time values in the format 'HH:MM:SS.SSS'. The code snippet provided demonstrates how to create a table with `TIME` columns, insert data into it, and perform various queries and operations on the data.
 
-## Creating a table with TIME columns
-
-To create a table with columns of type `TIME`, use the `CREATE TABLE` statement:
-
-```sql
-CREATE TABLE TimeLog (
-    id INTEGER,
-    time1 TIME,
-    time2 TIME
-);
-```
-
-## Inserting data into a table with TIME columns
-
-To insert data into a table with `TIME` columns, use the `INSERT INTO` statement:
-
-```sql
-INSERT INTO TimeLog VALUES
-    (1, '12:30:00', '13:31:01.123'),
-    (2, '9:2:1', 'AM 08:02:01.001'),
-    (3, 'PM 2:59', '9:00:00 AM');
-```
 
 ## Querying data from a table with TIME columns
 

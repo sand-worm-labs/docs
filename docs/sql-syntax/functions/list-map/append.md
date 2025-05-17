@@ -15,21 +15,6 @@ APPEND(list, element)
 
 First, create a table named `Append` with columns for the list, an integer element, and a text element:
 
-```sql
-CREATE TABLE Append (
-    id INTEGER,
-    items LIST,
-    element INTEGER,
-    element2 TEXT
-);
-```
-
-Insert some data into the `Append` table:
-
-```sql
-INSERT INTO Append VALUES
-(1, '[1, 2, 3]', 4, 'Foo');
-```
 
 Use the `APPEND` function to append the integer element to the list:
 

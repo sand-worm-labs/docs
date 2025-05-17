@@ -14,15 +14,6 @@ ABS(value)
 
 Let's consider a table named `SingleItem` with the following schema:
 
-```sql
-CREATE TABLE SingleItem (id INTEGER, int8 INT8, dec DECIMAL);
-```
-
-Insert a row into the `SingleItem` table:
-
-```sql
-INSERT INTO SingleItem VALUES (0, -1, -2);
-```
 
 ### Example 1: Using ABS with integer values
 
