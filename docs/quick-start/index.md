@@ -70,10 +70,10 @@ That’s it! You’re worming 🪱
 
 If you want to dive deeper, check out:
 
-- [**Web App Guide**](./webapp.md) — full breakdown of each page and feature
-- [**WQL Syntax**](./wql.md) — query language reference
-- [**Dataset Explorer**](./datasets.md) — what data is available
+- [**Web App Guide**](../web-app/) — full breakdown of each page and feature
+- [**WQL Syntax**](../sql-syntax/intro.md) — query language reference
+- [**Dataset Explorer**](../web-app/workspace/dataset-explorer.md) — what data is available
 
 You're ready to explore, remix, and build with onchain data — no gatekeeping required.
 
-**Next up →** [Web App Guide](./webapp.md): how to use each section of Sandworm like a pro.
+**Next up →** [Web App Guide](../web-app): how to use each section of Sandworm like a pro.

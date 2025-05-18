@@ -88,23 +88,12 @@ const config: Config = {
                 position: "left",
                 activeBasePath: "quick-start",
               },
-              {
-                to: "getting-started/rust",
-                label: "Getting Started",
-                position: "left",
-                activeBasePath: "getting-started",
-              },
+
               {
                 to: "sql-syntax/intro",
-                label: "SQL Syntax",
+                label: "WQL Syntax",
                 position: "left",
                 activeBasePath: "sql-syntax",
-              },
-              {
-                to: "ast-builder/intro",
-                label: "AST Builder",
-                position: "left",
-                activeBasePath: "ast-builder",
               },
 
               {
