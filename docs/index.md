@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-**SandWorm** ia an open-source blockchain data indexer designed specifically for the Sui network. SandWorm provides an easy-to-use interface for querying blockchain data using a SQL-like query language called **WQL (Worm Query Language)**. Unlike traditional indexers, SandWorm offers a fully decentralized and community-driven approach to blockchain analytics.
+**SandWorm** ia an open-source blockchain data indexer designed specifically for the Sui network. SandWorm provides an easy-to-use interface for querying blockchain data using a SQL-like query language called **WQL (Worm Query Language)**. Unlike traditional indexers, SandWorm offers a fully decentralized and community-driven approach to blockchain analytics. hmm
 
 ## What SandWorm Offers
 
