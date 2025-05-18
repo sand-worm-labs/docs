@@ -83,6 +83,12 @@ const config: Config = {
             ]
           : [
               {
+                to: "quick-start",
+                label: "Quick Start",
+                position: "left",
+                activeBasePath: "quick-start",
+              },
+              {
                 to: "getting-started/rust",
                 label: "Getting Started",
                 position: "left",
