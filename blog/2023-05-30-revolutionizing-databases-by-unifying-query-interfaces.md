@@ -96,8 +96,7 @@ We’re shipping fast. Here’s what’s on deck:
 
 ### Try It. Fork It. Break It.
 
-Sandworm is live in public alpha — raw but ready.
-No sign-up, no gatekeeping. Just vibes and queries.
+Sandworm is now in private beta — raw but ready. Access is limited to folks we share the link and Discord with, keeping things tight while we fine-tune. No sign-up walls for our testers. Just vibes, queries, and chaos.
 
 → Fork a gist
 → Build your own
@@ -130,7 +129,3 @@ We’re building for the ones who question everything — and want to build in t
 Query everything.
 Fork the system.
 And let’s build the future of onchain data — together.
-
----
-
-Want this dropped into a `.mdx` or Notion-friendly blog format? Or wanna embed some screenshots or code snippets in the middle? Just say the word.
