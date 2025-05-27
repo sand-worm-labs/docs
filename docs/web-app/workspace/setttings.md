@@ -8,7 +8,7 @@ The **Workspace Settings** panel lets you personalize how you interact with Sand
 
 You can set your **default chain** so every new query or session starts on your preferred network.
 
-- Available options include Sui and any other supported chains.
+- Available options include Sui, Eth, Base, Optimism and any other supported chains.
 - This chain will be auto-selected in:
 
   - The query editor

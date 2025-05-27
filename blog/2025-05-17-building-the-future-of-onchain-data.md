@@ -11,14 +11,14 @@ authors:
     title: Creator of Sandworm
     url: https://ceeriil.com
     image_url: https://imgur.com/IPQTLph.png
-tags: [WQL, query-interface, blockchain, data]
+tags: [WQL, query-interface, blockchain, data, blockchain-data-analytics]
 ---
 
 ## **Query Everything: Why We Built Sandworm**
 
-### Introduction
+### From idea to MVP
 
-Blockchain data is public — in theory.
+Blockchain data is public, in theory.
 In practice? It’s quite difficult to get specific data. You’re piecing together data from five different platforms, some with rate limits, some with missing endpoints. and worse if you’re looking for something specific, like transactions from that niche contract your app depends on.
 
 We’ve been there. You just wanna know _who swapped what_, and suddenly you’re 20 tabs deep in explorer hell, mentally diffing JSON payloads.
@@ -32,7 +32,7 @@ So we built the tool we wish we had.
 ### What Sandworm Is (and Isn’t)
 
 Sandworm is for the curious ones.
-The devs, the researchers, the data nerds who don’t just read the chain — they interrogate it.
+The devs, the researchers, the data nerds who don’t just read the chain. They interrogate it.
 
 It’s:
 
@@ -52,7 +52,7 @@ At first glance, Sandworm might feel like just another dev tool. But under the h
 
 > Sandworm is built for the community.
 
-No middlemen. No gatekeeping. Just raw, explorable, onchain data — the way it should be. We’re building a transparent, accessible, and _composable_ data layer — something anyone can tap into, remix, and build on top of.
+No middlemen. No gatekeeping. Just raw, explorable, onchain data, the way it should be. We’re building a transparent, accessible, and _composable_ data layer. Something anyone can tap into, remix, and build on top of.
 
 Sandworm isn’t controlled by a central team.
 Yes, we kickstarted it. But we don’t **own** it.
@@ -73,7 +73,7 @@ We’re opening the protocol.
 
 ### What's Live Right Now
 
-- WQL — simple, expressive, and powerful
+- WQL: simple, expressive, and powerful
 - A clean, fast IDE with tabs, previews, and gist saving
 - Public query explorer (no sign-up needed)
 - Fork + remix queries like a dev sandbox
@@ -85,18 +85,19 @@ We’re opening the protocol.
 
 We’re shipping fast. Here’s what’s on deck:
 
-- Visual dashboards + custom data viz
+- Visual dashboards + Custom data visualisation
 - Multichain support
 - Plugins + integrations
 - Community roadmap voting
+- AI layer for querying, analysis, and accessibility
 - Contributor incentives + protocol ownership
-- Fully onchain backend + governance
+- Fully onchain infra for trustless data access + governance
 
 ---
 
 ### Try It. Fork It. Break It.
 
-Sandworm is now in private beta — raw but ready. Access is limited to folks we share the link and Discord with, keeping things tight while we fine-tune. No sign-up walls for our testers. Just vibes, queries, and chaos.
+Sandworm is now in private beta, raw but ready. Access is limited to folks we share the link and Discord with, keeping things tight while we fine-tune. No sign-up walls for our testers. Just vibes, queries, and chaos.
 
 → Fork a gist
 → Build your own
@@ -123,8 +124,8 @@ We’ll be here — listening, shipping, and making it better with you.
 
 Sandworm isn’t just a tool. It’s a turning point.
 
-If you're tired of walled gardens and black boxes, you’re not alone.
-We’re building for the ones who question everything — and want to build in the open.
+If you crave deeper insight not just access, you’re in the right place.
+We’re building for the ones who question everything and want to build in the open.
 
 Query everything.
 Fork the system.
