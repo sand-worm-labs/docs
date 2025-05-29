@@ -33,7 +33,7 @@ Jumpstart your flow by forking a query from [**community gists**](https://sandwo
 ### ✍️ Write Your First WQL Query
 
 ```sql
-SELECT * FROM transactions
+SELECT * FROM  chainname.transactions
 WHERE sender = '0xYourAddress'
 ORDER BY timestamp DESC
 LIMIT 10;
@@ -43,19 +43,11 @@ Done. You just pulled your latest 10 txns.
 
 ---
 
-### 🧪 Sample Query (Basic Schema)
-
-```sql
-CREATE TABLE Names (id INTEGER, name TEXT);
-INSERT INTO Names VALUES (1, 'Worm'), (2, 'SQL');
-```
-
 ### 🐍 Sample Query (Schemaless Join)
 
 ```sql
-CREATE TABLE Logs;
-SELECT * FROM Names
-JOIN Logs ON Names.id = Logs.id;
+SELECT * FROM chainname.transations
+JOIN chainname.Logs ON transations.id = Logs.id;
 ```
 
 🔍 WQL smartly merges structure where possible:
