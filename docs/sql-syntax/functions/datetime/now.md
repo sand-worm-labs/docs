@@ -13,7 +13,7 @@ NOW()
 ### Creating a table with a TIMESTAMP column and setting the default value to NOW()
 
 ```sql
-CREATE TABLE Item (time TIMESTAMP DEFAULT NOW());
+SELECT * Item (time TIMESTAMP DEFAULT NOW());
 ```
 
 This creates a table named `Item` with a column `time` of the type TIMESTAMP. The default value for this column is the current UTC timestamp.

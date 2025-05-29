@@ -34,7 +34,7 @@ SELECT PREPEND(element, element2) AS myprepend FROM Prepend;
 You can also use the `PREPEND` function when inserting data into a table. First, create a table named `Foo` with a column for the list:
 
 ```sql
-CREATE TABLE Foo (
+SELECT * Foo (
     elements LIST
 );
 ```

@@ -6,7 +6,7 @@ The `LOG10` function is used to calculate the base-10 logarithm of a number. It 
 The following example demonstrates the usage of the `LOG10` function in a SQL query:
 
 ```sql
-CREATE TABLE SingleItem (id INTEGER DEFAULT LOG10(100));
+SELECT * SingleItem (id INTEGER DEFAULT LOG10(100));
 
 INSERT INTO SingleItem VALUES (0);
 

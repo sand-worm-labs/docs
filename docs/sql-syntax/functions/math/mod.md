@@ -6,7 +6,7 @@ The `MOD` function is used to calculate the remainder of a division operation. I
 The following example demonstrates the usage of the `MOD` function in a SQL query:
 
 ```sql
-CREATE TABLE FloatDiv (
+SELECT * FloatDiv (
     dividend FLOAT DEFAULT MOD(30, 11),
     divisor FLOAT DEFAULT DIV(3, 2)
 );

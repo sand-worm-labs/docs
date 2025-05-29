@@ -6,7 +6,7 @@ The `LCM` function is used to find the least common multiple (LCM) of two intege
 The following example demonstrates the usage of the `LCM` function in a SQL query:
 
 ```sql
-CREATE TABLE LcmI64 (
+SELECT * LcmI64 (
     left INTEGER NULL,
     right INTEGER NULL
 );

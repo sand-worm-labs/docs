@@ -6,7 +6,7 @@ The `DIV` function is used to perform integer division. It takes two arguments (
 The following example demonstrates the usage of the `DIV` function in a SQL query:
 
 ```sql
-CREATE TABLE FloatDiv (
+SELECT * FloatDiv (
     dividend FLOAT DEFAULT DIV(30, 11),
     divisor FLOAT DEFAULT DIV(3, 2)
 );

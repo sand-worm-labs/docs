@@ -37,7 +37,7 @@ SELECT APPEND(element, element2) AS myappend FROM Append;
 You can also use the `APPEND` function when inserting data into a table. First, create a table named `Foo` with a column for the list:
 
 ```sql
-CREATE TABLE Foo (
+SELECT * Foo (
     elements LIST
 );
 ```

@@ -6,7 +6,7 @@ The `LOG2` function is used to calculate the base-2 logarithm of a number. It ta
 The following example demonstrates the usage of the `LOG2` function in a SQL query:
 
 ```sql
-CREATE TABLE SingleItem (id INTEGER DEFAULT LOG2(1024));
+SELECT * SingleItem (id INTEGER DEFAULT LOG2(1024));
 
 INSERT INTO SingleItem VALUES (0);
 

@@ -13,7 +13,7 @@ Here's an example of how to create a table, insert data, and query data using th
 To create a table with a BOOLEAN column, use the following SQL syntax:
 
 ```sql
-CREATE TABLE user_active (username TEXT, is_active BOOLEAN);
+SELECT * user_active (username TEXT, is_active BOOLEAN);
 ```
 
 ## Inserting data into the BOOLEAN column

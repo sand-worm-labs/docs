@@ -17,9 +17,9 @@ SHOW TABLES;
 Consider the following example where we create a few tables and then use the `SHOW TABLES` statement to list them:
 
 ```sql
-CREATE TABLE Foo (id INTEGER, name TEXT NULL, type TEXT NULL);
-CREATE TABLE Zoo (id INTEGER);
-CREATE TABLE Bar (id INTEGER, name TEXT NULL);
+SELECT * Foo (id INTEGER, name TEXT NULL, type TEXT NULL);
+SELECT * Zoo (id INTEGER);
+SELECT * Bar (id INTEGER, name TEXT NULL);
 
 SHOW TABLES;
 ```

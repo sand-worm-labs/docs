@@ -15,7 +15,7 @@ DEGREES(value)
 Let's consider a table named `SingleItem` with the following schema:
 
 ```sql
-CREATE TABLE SingleItem (id FLOAT);
+SELECT * SingleItem (id FLOAT);
 ```
 
 Insert a row into the `SingleItem` table:

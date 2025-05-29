@@ -6,7 +6,7 @@ The `LN` function is used to calculate the natural logarithm (base `e`) of a num
 The following example demonstrates the usage of the `LN` function in a SQL query:
 
 ```sql
-CREATE TABLE SingleItem (id INTEGER DEFAULT LN(10));
+SELECT * SingleItem (id INTEGER DEFAULT LN(10));
 
 INSERT INTO SingleItem VALUES (0);
 

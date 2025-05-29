@@ -21,7 +21,7 @@ For general purposes, you can use `INTEGER` to specify a 64-bit signed integer.
 Here's an example of how to create a table with integer data types:
 
 ```
-CREATE TABLE Item (
+SELECT * Item (
   field_one INTEGER,
   field_two INTEGER
 );

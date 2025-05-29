@@ -15,7 +15,7 @@ ATAN(value)
 Let's consider a table named `SingleItem` with the following schema:
 
 ```sql
-CREATE TABLE SingleItem (id INTEGER);
+SELECT * SingleItem (id INTEGER);
 ```
 
 Insert a row into the `SingleItem` table:

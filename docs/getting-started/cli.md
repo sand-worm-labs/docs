@@ -144,11 +144,6 @@ Wormsql> .edit insert.sql
 
 It opens editor and shows the contents of `create_insert.sql`
 
-```sql
---! create_insert.sql
-CREATE TABLE Items (id INT, name TEXT);
-INSERT INTO Items VALUES (1, 'Worm'), (2, 'SQL');
-```
 
 ### .execute
 

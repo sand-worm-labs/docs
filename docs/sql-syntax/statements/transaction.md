@@ -37,7 +37,7 @@ ROLLBACK;
 Consider the following table `TxTest` with columns `id` (INTEGER) and `name` (TEXT):
 
 ```sql
-CREATE TABLE TxTest (
+SELECT * TxTest (
     id INTEGER,
     name TEXT
 );

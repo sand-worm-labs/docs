@@ -6,7 +6,7 @@ The `GCD` function is used to find the greatest common divisor (GCD) of two inte
 The following example demonstrates the usage of the `GCD` function in a SQL query:
 
 ```sql
-CREATE TABLE GcdI64 (
+SELECT * GcdI64 (
     left INTEGER NULL DEFAULT GCD(3, 4),
     right INTEGER NULL
 );

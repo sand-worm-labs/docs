@@ -6,7 +6,7 @@ The `LOG` function calculates the logarithm of a number with a specified base. I
 The following example demonstrates the usage of the `LOG` function in a SQL query:
 
 ```sql
-CREATE TABLE SingleItem (id INTEGER DEFAULT LOG(2, 64));
+SELECT * SingleItem (id INTEGER DEFAULT LOG(2, 64));
 
 INSERT INTO SingleItem VALUES (0);
 
