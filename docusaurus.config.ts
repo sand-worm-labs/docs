@@ -4,15 +4,19 @@ import { Config } from "@docusaurus/types";
 import { themes } from "prism-react-renderer";
 import path from "path";
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const isBlog = process.env.SANDWORM_DOC_TYPE === "blog";
 const docsBaseUrl = process.env.SANDWORM_DOCS_BASE_URL ?? "/";
+const analaticsKey = process.env.SANDWORM_ANALYTICS_KEY || "";
 
 const config: Config = {
   markdown: {
     mermaid: true,
   },
   themes: ["@docusaurus/theme-mermaid"],
-
   title: "Sandworm Documentation",
   tagline: "WormSQL is quite sticky. It attaches to anywhere",
   favicon: "img/favicon.ico",
@@ -27,6 +31,15 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+  plugins: [
+    [
+      "@docusaurus/plugin-google-gtag",
+      {
+        trackingID: analaticsKey,
+        anonymizeIP: false,
+      },
+    ],
+  ],
 
   presets: [
     [
