@@ -1,6 +1,6 @@
 ---
 title: "Interpreting Onchain Data"
-description: "From frustration to creation — how chasing better ways to query blockchain data led me to build Sandworm."
+description: "We exist because onchain data should be easier to interpret."
 slug: "interpreting-onchain-data"
 authors:
   - name: "Daniel"
